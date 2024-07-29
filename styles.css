@@ -1,0 +1,456 @@
+html,body {
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+}
+
+body{
+    background-color: #FDFFFC;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#favicon{
+    filter: invert(1);
+}
+
+header{
+    float: left;
+    width: 100%;
+    height: 30vh;
+}
+
+.header-container {
+    /* float: left; */
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: flex-end;
+}
+
+/*
+nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-top: 180px; 
+    font-family: 'Nunito Sans'; 
+    color: #011627 !important;
+}
+*/
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Nunito Sans';
+    font-weight: 700;
+    color: #011627 !important;
+}
+
+nav.dark-mode ul{
+    color: #FDFFFC !important;
+}
+
+nav li{
+    height: 50px;
+    padding: 0 15px;
+}
+
+.last-menu-item{
+    padding-right: 0;
+}
+
+
+.main-menu li:last-child{
+    display: none;
+}
+
+
+nav li a{
+    display: inline-block;
+    height: 70%;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    border-bottom: 2px solid #E71D36;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 220px 0 0 50px;
+    z-index: 999;
+    background-color: rgba(252, 252, 252, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.body-container{
+    float: left;
+    height: 70vh;
+    width: 100% !important;    
+}
+
+.main-body {
+    /* float: left; */
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.first-div{
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+.second-div{
+    display: flex;;
+    width: 60%;
+    height: 100%;
+    align-items: flex-end;
+}
+
+/*
+h2.vertical{
+    position: relative;
+    font-size: 40px;
+    font-weight: 300;
+    transform: rotate(270deg);
+    padding: 550px 0 0 322px;
+}
+*/
+
+h2.horizontal{
+    font-size: 41px;
+    font-weight: bolder;
+    padding-top: 40%;
+    text-align: right;
+    padding-right: 15%;
+    font-family: 'Nunito Sans';
+    text-transform: uppercase;
+}
+
+.baseline{
+    position: relative;
+    border: none;
+    height: 0.3px;
+    background-color: #011627;
+    width: 13%;
+    bottom: 6%;
+    left: 92%;
+}
+
+.line-art{
+    position: relative;
+    width: 150px;
+    height: 470px;
+    border-left: 1px solid #011627;
+    border-top: 1px solid #011627;
+    right: -105%;
+    top: -61%;
+    /*top: -42.5vh;*/
+}
+
+.baseline.about-page{
+    bottom: 172px;
+}
+
+.line-art.about-page{
+    top: -87%;
+}
+
+.line-art.contact-page{
+    top: -75%;
+    border-color: #FDFFFC;
+}
+
+.baseline.contact-page{
+    bottom: 108px;
+    background-color: #FDFFFC;
+}
+
+.baseline.writing-page{
+    bottom: 26px;
+}
+
+.line-art.writing-page{
+    top: -60%
+}
+
+
+.secondary-container{
+    float: left;
+    width: 100%;
+    margin-left: 15%;
+}
+
+.secondary-container img{
+    width: 100%;
+    max-height: 100%;
+    filter: grayscale(100%);
+}
+
+.photo-credit {
+    position: relative;
+    right: -51%;
+    bottom: -90%;
+}
+
+p.pc-text, p.pc-text-light {
+    transform: rotate(90deg);
+    font-size: 13px;
+    font-family: 'Inria Serif';
+}
+
+
+p.pc-text-light {
+    color: #FDFFFC;
+}
+
+.contact-part h2, .about-part h2 {
+    font-size: 36px;
+    font-weight: 600;
+    padding-top: 40%;
+    text-align: right; 
+    font-family: 'Nunito Sans'; 
+    color: #FDFFFC;
+    padding-right: 15%;
+}
+
+.about-part h2{
+    color: #011627 !important;
+}
+
+body.contact-page{
+    background-color: #011627;
+}
+
+.contact-details, .about-me {
+    padding: 20px 0 0;
+}
+
+.contact-details {
+    line-height: 30px;
+    text-align: right;
+    color: #FDFFFC;
+    padding-right: 15%;
+    font-family: 'Inria Serif';
+}
+
+.about-me p{
+    font-family: 'Inria Serif';
+    line-height: 25px;
+    text-align: justify;     
+}
+
+.contact-details span{
+    font-family: 'Inria Serif';
+}
+
+.about-me{
+    /*width: 250px;*/
+    padding-right: 15%;
+    padding-left: 100px;
+}
+
+.writings h2 {
+    font-size: 36px;
+    font-weight: 600;
+    padding-top: 40%;
+    text-align: right;
+    width: 100%;
+    padding-right: 15%;
+    font-family: 'Nunito Sans';
+}
+
+.writings-list{
+    position: relative;
+}
+
+.writings-list img{
+    opacity: 1;
+    filter: brightness(60%) grayscale(100%);
+}
+
+.writings-list ul {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 25px 0 20px 100px;
+}
+
+.writings-list li{
+    color: #FDFFFC;
+    padding: 8px 0;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Inria Serif'
+}
+
+.writings-list li:first-child{
+    padding: 5px 0;
+}
+
+.writings-list li span{
+    display: block;
+    font-style: italic;
+}
+
+strong{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+}
+
+/* R&P Page */
+
+
+/* For mobile */
+@media only screen and (max-width: 768px) {
+
+    .hide-on-mobile{
+        display: none;
+    }
+
+    nav ul {
+        padding: 10vh 10vw;
+    }
+
+    .main-menu li{
+        display: none;
+    }
+
+    .main-menu li:last-child{
+        display: list-item;
+    }
+
+
+    nav a {
+        font-size: 13px;
+    }
+
+    nav.dark-mode ul{
+        color: #011627 !important;
+    }
+
+    .main-body{
+        width: 100%;
+    }
+
+    .first-div{
+        position: relative;
+        width: 100%;
+        z-index: 454;
+    }
+
+    .second-div {
+        position: absolute;
+        display: block;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .secondary-container{
+        margin-left: 0;
+    }
+
+    h2.horizontal {
+        position: relative;
+        font-size: 32px;
+        font-weight: bold;
+        transform: rotate(270deg);
+        padding: 0 0 0 0;
+        top: 115px;
+        left: -100px;
+        text-align: left;
+        background-color: #FDFFFC;
+    }
+
+    .contact-part h2, .about-part h2, .writings h2 {
+        font-size: 36px;
+        font-weight: 400;
+        padding-top: 85%;
+        text-align: left;
+        padding-left: 10vw;
+        padding-right: 0;
+    }
+
+    body.about-page{
+        overflow: visible;
+    }
+
+    .photo-credit {
+        display: none;
+    }
+
+    .about-me, .contact-details{
+        padding: 30px 10vw;
+        text-align: left;
+    }
+
+    .baseline.about-page, 
+    .line-art.about-page,
+    .baseline.writing-page, 
+    .line-art.writing-page,
+    .baseline.contact-page, 
+    .line-art.contact-page{
+        display: none;
+    }
+
+    .contact-details{
+        padding: 30px 11vw;
+    }
+
+    .writings-list img {
+        filter: grayscale(100%);
+    }
+
+    .writings-list ul {
+        top: 43vh;
+        width: 100%;
+        padding: 25px 10vw;
+    }
+
+    .writings-list li{
+        color: #011627;
+        font-size: 16px;
+        padding: 5px 0;
+    }
+
+    .writings-list li:first-child{
+        padding: 0 0 5px 0;
+    }
+
+    .writings-list li:last-child{
+        padding-bottom: 50px;
+    }
+
+    ul.sidebar.writing-page {
+        width: 389px;
+    }
+
+
+}
